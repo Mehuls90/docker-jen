@@ -4,6 +4,6 @@ LABEL name=mehul,email=mehul@gmail.com
 
 RUN yum install httpd -y
 
-COPY index.html /var/www/html/
+COPY . /var/www/html/
 
 CMD [ "httpd", "-D", "FOREGROUND" ]
